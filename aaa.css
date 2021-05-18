@@ -661,6 +661,10 @@ main {
   overflow: hidden;
 }
 
+.designation {
+  font-size: rem;
+}
+
   .nav-content{
     /* background: pink; */
   }

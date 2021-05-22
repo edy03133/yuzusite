@@ -16,6 +16,12 @@
 </head>
 
 <body>
+  <!-- ここからローディングアニメ -->
+  <div id="splash">
+    <div id="splash_text"></div>
+  </div>
+  <!-- ここまでローディングアニメ -->
+
   <container>
     <header id="header">
 
@@ -45,7 +51,7 @@
         </ul>
       </div>
       <!--ここまでメニュー-->
-            <!-- ここから試用 -->
+            <!-- ここからぷくぷく背景 -->
             <div class="context">
               <h1></h1>
           </div>
@@ -63,7 +69,7 @@
                           <li></li>
                   </ul>
           </div >
-            <!-- ここまで試用 -->
+            <!-- ここまでぷくぷく背景 -->
             <!-- ここからスクロール -->
             <div class="scrolldown2"><span>Scroll</span></div>
             <!-- ここまでスクロール -->
@@ -79,11 +85,11 @@
           <div class="about-wrapper">
             <!-- 画像 -->
             
-            <div class="about-img huwa">
+            <div class="about-img huwaLeft">
               <img src="img/yuzu.jpg" alt="">
             </div>
             <!-- message -->
-            <div class="message huwa">
+            <div class="message huwaRight">
               <p><span>ゆず（本名：杉村英治）</span></p>
               <br>
               <p>愛知県在住</p>
@@ -209,7 +215,7 @@
                 <p>オリジナル</p>
 
               </div>
-              <div class="img-box huwa">
+              <div class="img-box delay2">
                 <a href="img/faluo.png" data-lightbox="group"><img src="img/faluosamune.png" width="300"></a>
                 <p><span>XXXXのポートフォリオサイト</span></p>
                 <p class="works-text">HTML / CSS / Javascript /<br>
@@ -217,7 +223,7 @@
                 <p>依頼者様：ISHIKAWA　様<br>
                 ※依頼者様希望により一部変更してます</p>
               </div>
-              <div class="img-box huwa">
+              <div class="img-box delay3">
                 <a href="img/3.jpg" data-lightbox="group"><img src="img/3.jpg" width="300"></a>
                 <p><span>タイトルタイトルタイトル</span></p>
                 <p class="works-text">HTML / CSS / Javascript / WordPress</p>
@@ -321,6 +327,7 @@
         <p class="contact-text">
           無料ご相談・ご質問・ご依頼は下記twitterのDM、またはお問い合わせフォームにてお願いいたします。
         </p>
+<a href="contact.html">お問い合わせ</a>
         <div class="contact-content">
           <div class="twitter huwa">
             <a href="https://twitter.com/yuzu_program" target="blank"><img src="img/ツイッターアイコン丸.png"></a>
@@ -359,14 +366,17 @@
 
   <script>
     //  ここからふわっと表示用JS
-    window.sr = ScrollReveal({ reset: true, mobile: true });
-    sr.reveal('.huwa', { origin: 'bottom', distance: '50px', duration: 600, scale: 1.0, delay: 400, });
+ 
     //  ここまでふわっと表示用JS
   </script>
     <!-- ここからページトップ -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
     <!-- ここまでページトップ -->
+
+    <script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.min.js"></script>
+    <!--自作のJS-->
+<script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/4-1-2/js/4-1-2.js"></script>
 </body>
 
 </html>

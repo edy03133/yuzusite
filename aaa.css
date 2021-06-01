@@ -399,11 +399,12 @@ header {
   color: #FFF; 
 }
 .nav-content ul {
+  /* width: 700px; */
   height: 100%;
   display: flex;
   justify-content: space-around;
   padding-top: 1%;
-  margin-left: 70%;
+  
 
   background: rgba(85, 138, 139, 0.521);
 }
@@ -569,12 +570,9 @@ a:hover::after {
 }
 /* -----------------ここからabout------------------*/
 .about-wrapper {
-
   display: flex;
  flex-flow: row wrap;
- 
  /* background: pink; */
-
 }
 .about-img {
   /* background: tomato; */
@@ -598,8 +596,8 @@ a:hover::after {
   line-height: 1.5rem;
 }
 .housin-wrapper {
-  padding-right: 14%;
-  padding-left: 14%;
+  padding-right: 8%;
+  padding-left: 8%;
   margin-top: 30px;
   text-align: left;
 }
@@ -651,6 +649,7 @@ margin-top: 30px;
   margin: 0 auto;
   box-shadow: 2px 2px 20px gray;
  display: block; 
+ height: 140px;
 }
 /* テキストプロパティ */
 .img-box p span{
@@ -907,6 +906,10 @@ main {
     margin: 10px 20px;
     padding: 5px;
     text-align: center;
+  }
+
+  .img-box img {
+    width: 50%;
   }
 
   /* -----------------RP-service----------------- */

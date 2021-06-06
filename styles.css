@@ -1,0 +1,1028 @@
+/* リセットCSS */
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+input,
+select {
+  vertical-align: middle;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+/* --------------ここまでリセットCSS-------------------- */
+
+/* --------------ここからローディング-------------------- */
+/* Loading背景画面設定 */
+#splash {
+  /*fixedで全面に固定*/
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  background: #333;
+  text-align: center;
+  color: #fff;
+}
+/* Loadingバー中央配置　*/
+#splash_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 999;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+/* --------------ここまでローディング-------------------- */
+
+/* ---------------ここから全体CSS----------------------- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /* font-family: ; */
+  /* text-align: left; */
+  line-height: 1.5rem;
+  color: rgb(46, 45, 45);
+  width: 100%;
+}
+
+/* 見出し */
+h2 {
+  color: #5bc8ac;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 30px;
+  text-align: center;
+  padding-top: 30px;
+  margin-bottom: 30px;
+}
+
+h3 {
+  text-align: center;
+  padding-bottom: 50px;
+  font-size: 0.9em;
+  font-weight: 1px;
+  color: #BCBCBC;
+}
+
+main {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* --------------ここまで全体CSS----------------- */
+/* --------------ここからヘッダー----------------- */
+
+body {
+  font-family: "Meiryo""メイリオ";
+}
+
+header {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-image: url(img/haikei.jpg);
+  background-size: cover;
+  -webkit-filter: blur(0px);
+  filter: blur(0px);
+  overflow: hidden;
+}
+
+/* ここから上に行く四角 */
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+.context {
+  width: 100%;
+  position: absolute;
+  top: 50vh;
+}
+
+.context h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 40px;
+}
+.area {
+  width: 100%;
+  height: 100vh;
+}
+
+.circles {
+  position: absolute;
+  top: 3;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.circles li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.384);
+  animation: animate 25s linear infinite;
+  bottom: -150px;
+
+}
+
+.circles li:nth-child(1) {
+  left: 25%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2) {
+  left: 10%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 2s;
+  animation-duration: 12s;
+}
+
+.circles li:nth-child(3) {
+  left: 70%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 4s;
+}
+
+.circles li:nth-child(4) {
+  left: 40%;
+  width: 60px;
+  height: 60px;
+  animation-delay: 0s;
+  animation-duration: 18s;
+}
+
+.circles li:nth-child(5) {
+  left: 65%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 0s;
+}
+
+.circles li:nth-child(6) {
+  left: 75%;
+  width: 110px;
+  height: 110px;
+  animation-delay: 3s;
+}
+
+.circles li:nth-child(7) {
+  left: 35%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 7s;
+}
+
+.circles li:nth-child(8) {
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  animation-delay: 15s;
+  animation-duration: 45s;
+}
+
+.circles li:nth-child(9) {
+  left: 20%;
+  width: 15px;
+  height: 15px;
+  animation-delay: 2s;
+  animation-duration: 35s;
+}
+
+.circles li:nth-child(10) {
+  left: 85%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 0s;
+  animation-duration: 11s;
+}
+
+@keyframes animate {
+
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+    border-radius: 0;
+  }
+
+  100% {
+    transform: translateY(-1000px) rotate(720deg);
+    opacity: 0;
+    border-radius: 50%;
+  }
+
+}
+/* ここまで上に行く四角 */
+
+/* ここからヘッダーサークル */
+.circle_container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 10px;
+  -webkit-transform-origin: left center;
+  transform-origin: left center;
+}
+
+.circle_container .circle {
+  position: absolute;
+  border-radius: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  left: 0;
+  opacity: 0;
+  -webkit-animation-name: move;
+  animation-name: move;
+  -webkit-animation-duration: 20s;
+  animation-duration: 20s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.wrapper .name_container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 80vmin;
+  height: 80vmin;
+  background: rgba(255, 255, 255, 0.233);
+  border-radius: 100%;
+  box-shadow: inset 0px 0px 30px 30px rgba(200, 200, 200, 0.1);
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.wrapper .name_container div {
+  font-family: 'Pacifico', cursive;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.wrapper .name_container .name {
+  font-size: 5.5vmax;
+}
+
+.wrapper .name_container .designation {
+  margin-top: 60px;
+  font-size: 2vmax;
+}
+
+/* ここまでヘッダーサークル */
+/* ここからナビ */
+.nav-content {
+  max-width: 100%;
+  color: #FFF;
+}
+
+.nav-content ul {
+  position: relative;
+  height: 100%;
+  margin-left: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1%;
+  /* background: rgba(85, 139, 106, 0.61); */
+
+}
+
+.nav-content ul li {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  list-style: none;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+.nav-content ul li a {
+  font-size: 20px;
+  height: 60px;
+  display: block;
+  padding-top: 20px;
+  background: rgba(85, 139, 99, 0.514);
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.945);
+  position: relative;
+  text-decoration: none;
+}
+
+.nav-content li a:hover {
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.nav-content .logo {
+  font-size: 30px;
+  padding-top: 40px;
+  margin-left: 80px;
+  height: 30px;
+  line-height: 30px;
+}
+
+.logo {
+  margin-top: 25px;
+  margin-bottom: 40px;
+  width: 200px;
+}
+
+
+li a::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: rgba(247, 158, 86, 0.952);
+  transform: scale(0, 1);
+  transform-origin: left top;
+  transition: transform .3s;
+}
+
+a:hover::after {
+  transform: scale(1, 1);
+}
+
+.main p {
+  text-align: center;
+}
+
+/* ここからスクロールマーク */
+
+
+/*========= スクロールダウンのためのCSS ===============*/
+
+/*=== 9-1-2 丸が動いてスクロールを促す ====*/
+
+/*スクロールダウン全体の場所*/
+.scrolldown2 {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+}
+
+/*Scrollテキストの描写*/
+.scrolldown2 span {
+  /*描画位置*/
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  /*テキストの形状*/
+  color: #eee;
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  /*縦書き設定*/
+  -ms-writing-mode: tb-rl;
+  -webkit-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
+}
+
+/* 丸の描写 */
+.scrolldown2:before {
+  content: "";
+  /*描画位置*/
+  position: absolute;
+  bottom: 0;
+  left: -4px;
+  /*丸の形状*/
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #eee;
+  /*丸の動き1.6秒かけて透過し、永遠にループ*/
+  animation:
+    circlemove 1.6s ease-in-out infinite,
+    cirlemovehide 1.6s ease-out infinite;
+}
+
+/*下からの距離が変化して丸の全体が上から下に動く*/
+@keyframes circlemove {
+  0% {
+    bottom: 45px;
+  }
+
+  100% {
+    bottom: -5px;
+  }
+}
+
+/*上から下にかけて丸が透過→不透明→透過する*/
+@keyframes cirlemovehide {
+  0% {
+    opacity: 0
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 0.9;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+/* 線の描写 */
+.scrolldown2:after {
+  content: "";
+  /*描画位置*/
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  /*線の形状*/
+  width: 2px;
+  height: 50px;
+  background: #eee;
+}
+
+
+
+/* ここまでスクロールマーク */
+
+
+
+/* 黄色の蛍光ペン */
+.message h2 span {
+  background: linear-gradient(transparent 60%, rgb(255, 209, 171) 60%);
+}
+
+/* 緑の蛍光ペン */
+.message p span {
+  background: linear-gradient(transparent 50%, rgb(184, 236, 196) 60%);
+}
+
+.message span {
+  font-size: 1.5em;
+}
+
+/* -----------------ここからabout------------------*/
+.about-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  /* background: pink; */
+}
+
+.about-img {
+  /* background: tomato; */
+  width: 400px;
+  margin: 30px;
+  text-align: center;
+
+}
+
+.about-img img {
+  max-width: 100%;
+  border-radius: 50%;
+  border: solid 1px;
+  box-shadow: 0px 0px 8px gray;
+}
+
+.message {
+  background: rgb(236, 248, 243);
+  box-shadow: 0px 0px 8px gray;
+  width: 50%;
+  text-align: left;
+  padding: 30px;
+  line-height: 1.5rem;
+}
+
+.housin-wrapper {
+  padding-right: 8%;
+  padding-left: 8%;
+  margin-top: 30px;
+  text-align: left;
+}
+
+.housin-wrapper span {
+  font-weight: bold;
+}
+
+.housin {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.housin img {
+  width: 300px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+}
+
+.housin-sent {
+  display: block;
+}
+
+/* -----------------ここからworks------------------*/
+#works {
+  background: rgb(236, 248, 243);
+}
+
+.works-wrapper {}
+
+.works-content {
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+/* 画像プロパティ */
+.img-box {
+  background: #fff;
+  width: 24%;
+  padding: 20px;
+  margin-bottom: 30px;
+  margin: 10px 20px;
+  text-align: center;
+
+}
+
+.img-box img {
+  width: 80%;
+  margin: 0 auto;
+  box-shadow: 2px 2px 20px gray;
+  display: block;
+  height: 140px;
+}
+
+/* テキストプロパティ */
+.img-box p span {
+  font-weight: bold;
+
+}
+
+.works-text {
+  font-size: small;
+}
+
+.img-box p {
+  margin-top: 10px;
+}
+
+
+
+/* ボタン */
+p.btn_design {
+  font-size: 28px;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;
+  text-align: center;
+  font-weight: bold;
+  padding: 20px 15px;
+  background-color: #000000;
+  color: #FFF;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+p.btn_design span {
+  display: inline-block;
+  transition: .5s
+}
+
+/* マウスオーバー時 */
+p.btn_design:hover span {
+  transform: rotateX(360deg);
+}
+
+/* -----------------ここからservive------------------*/
+.service-section {
+  margin-bottom: 60px;
+}
+
+.service-wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.service-content {
+  /* margin: 0 auto; */
+  width: 90%;
+  display: flex;
+  text-align: left;
+  padding-bottom: 30px;
+  padding-left: 20%;
+}
+
+.service-content img {
+  width: 160px;
+  margin-right: 5%;
+  border-radius: 50%;
+}
+
+.service-coment {
+  padding-left: 31%;
+}
+
+/* -----------------ここからcontact------------------*/
+.contact-text {
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  padding-bottom: 50px;
+}
+
+.twitter img {
+  width: 60px;
+  padding-right: 10px;
+}
+
+.contact-wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* -------------------ここからinfo--------------- */
+.info {
+  text-align: center;
+}
+
+.info p {
+  text-align: center;
+}
+
+.Form {
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 720px;
+}
+
+/* footer */
+
+footer {
+  text-align: center;
+  padding-top: 30px;
+}
+
+/*  --------------------------🌟ページトップ------------------------  */
+/*========= ページトップのためのCSS ===============*/
+/*リンクを右下に固定*/
+#page-top {
+  position: fixed;
+  right: 10px;
+  bottom: 30px;
+  z-index: 2;
+  /*はじめは非表示*/
+  opacity: 0;
+  transform: translateY(150px);
+}
+
+/*　上に上がる動き　*/
+#page-top.UpMove {
+  animation: UpAnime 0.5s forwards;
+}
+
+@keyframes UpAnime {
+  from {
+    opacity: 0;
+    transform: translateY(150px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*　下に下がる動き　*/
+#page-top.DownMove {
+  animation: DownAnime 0.5s forwards;
+}
+
+@keyframes DownAnime {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(150px);
+  }
+}
+
+/*画像の切り替えと動き*/
+#page-top a {
+  /*aタグの形状*/
+  display: block;
+  width: 100px;
+  height: 100px;
+  color: #333;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 0.6rem;
+  /*背景画像の指定*/
+  background: url("https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/8-1-8/img/pagetop_1.png") no-repeat center;
+  background-size: contain;
+}
+
+#page-top.floatAnime a {
+  width: 100px;
+  height: 130px;
+  /*背景画像の指定*/
+  background: url("https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/8-1-8/img/pagetop_2.png") no-repeat center;
+  background-size: contain;
+  /*アニメーションの指定*/
+  animation: floatAnime 2s linear infinite;
+  opacity: 0;
+}
+
+@keyframes floatAnime {
+  0% {
+    transform: translateX(0);
+    opacity: 0;
+  }
+
+  25% {
+    transform: translateX(-6px);
+    opacity: 1;
+  }
+
+  50% {
+    transform: translateX(0)
+  }
+
+  100% {
+    transform: translateX(6px);
+    opacity: 1;
+  }
+}
+
+/*Page Topと書かれたテキストの位置*/
+#page-top span {
+  position: absolute;
+  bottom: -20px;
+  right: 20px;
+  color: #666;
+}
+
+
+/*  --------------------------🌟レスポンシブ------------------------  */
+/* 760pxを下回ると発動 */
+@media screen and (max-width: 780px) {
+  main {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .designation {
+    font-size: rem;
+  }
+
+  .nav-content {
+    /* background: pink; */
+  }
+
+  .nav-content ul {
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  .nav-content ul li {
+    width: 50%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-content ul li a {
+    display: block;
+    padding: 20px;
+  }
+
+  .message {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .housin {
+    display: block;
+    margin-top: 30px;
+  }
+
+  .housin-title-PC {
+    display: none;
+  }
+
+  /* ------------RP- works---------------------- */
+  .works-content {
+    display: block;
+  }
+
+  .img-box {
+    width: 90%;
+    margin: 10px 20px;
+    padding: 5px;
+    text-align: center;
+  }
+
+  .img-box img {
+    width: 50%;
+  }
+
+  /* -----------------RP-service----------------- */
+
+  .service-content {
+    width: 100%;
+    padding: 0;
+    display: block;
+    text-align: center;
+  }
+
+  .service-content p {
+    padding: 10px 20px;
+    text-align-last: left;
+  }
+
+  .service-content img {
+    width: 30%;
+  }
+
+  .service-coment {
+    padding: 0 60px;
+  }
+
+  /* -------------------RP contact-------------------- */
+  .info {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .info iframe {
+    width: 100%;
+  }
+
+}
+
+/* ここまでレスポンシブ */
+
+/* ここからPC表示CSS */
+@media screen and (min-width: 780px) {
+  .housin-title-SP {
+    display: none;
+  }
+}
